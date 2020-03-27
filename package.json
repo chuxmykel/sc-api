@@ -9,12 +9,12 @@
     "start": "node build/app.js",
     "dev": "export DEBUG=dev && export NODE_ENV=development && nodemon --exec babel-node src/app.js",
     "debug": "export DEBUG=dev && nodemon --exec babel-node src/app.js --inspect",
-    "clean": "rm -rf build && mkdir build && npm run copy-docs",
-    "build": "npm run clean && babel -d ./build ./src --ignore '**/*.spec.js'",
+    "clean": "rm -rf build && mkdir build && yarn run copy-docs",
+    "build": "yarn run clean && babel -d ./build ./src --ignore '**/*.spec.js'",
     "copy-docs": "mkdir build/v1/ && cp -r src/v1/docs/ build/v1/docs/",
-    "test": "mocha --require @babel/register src/v1/**/*.spec.js --exit",
-    "nyc": "nyc --reporter=lcov npm run test && nyc report --reporter=text-lcov | coveralls",
-    "coverage": "nyc npm test"
+    "test": "mocha --require @babel/register 'src/v1/**/*.spec.js' --exit",
+    "nyc": "nyc --reporter=lcov yarn run test && nyc report --reporter=text-lcov | coveralls",
+    "coverage": "nyc yarn test"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
@@ -52,7 +52,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
-      "pre-push": "npm test"
+      "pre-push": "yarn test"
     }
   },
   "lint-staged": {
