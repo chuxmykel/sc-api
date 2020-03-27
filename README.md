@@ -1,1 +1,3 @@
 # sc-api
+
+[![Build Status](https://travis-ci.com/chuxmykel/sc-api.svg?branch=develop)](https://travis-ci.com/chuxmykel/sc-api)  [![Coverage Status](https://coveralls.io/repos/github/chuxmykel/sc-api/badge.svg?branch=develop)](https://coveralls.io/github/chuxmykel/sc-api?branch=develop)  [![Maintainability](https://api.codeclimate.com/v1/badges/eede0a67d49fff3939e6/maintainability)](https://codeclimate.com/github/chuxmykel/sc-api/maintainability)  [![Test Coverage](https://api.codeclimate.com/v1/badges/eede0a67d49fff3939e6/test_coverage)](https://codeclimate.com/github/chuxmykel/sc-api/test_coverage)

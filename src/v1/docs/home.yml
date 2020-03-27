@@ -1,0 +1,12 @@
+paths:
+  /:
+    get:
+      tags:
+      - home
+      summary: The home route of the API
+      description: Displays a simple welcome message
+      produces:
+      - application/json
+      responses:
+        200:
+          description: Success
